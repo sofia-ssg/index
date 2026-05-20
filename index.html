@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Template</title>
+    <title>Editable CV Template</title>
     <style>
         /* General Reset & Typography */
         body {
@@ -21,6 +21,12 @@
             background: #ffffff;
             padding: 50px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            /* Adds a subtle outline when you click to edit */
+            outline: none; 
+        }
+        
+        .container:focus {
+            box-shadow: 0 0 15px rgba(0, 120, 215, 0.3);
         }
 
         h1 {
@@ -162,9 +168,9 @@
         }
     </style>
 </head>
-<body>
+<body spellcheck="false">
 
-<div class="container">
+<div class="container" contenteditable="true">
     <h1>CV</h1>
 
     <div class="personal-info">
@@ -194,7 +200,7 @@
             </div>
         </div>
 
-        <div class="info-col-img">
+        <div class="info-col-img" contenteditable="false">
             <img src="https://via.placeholder.com/140x180?text=Profile+Photo" alt="Profile Photo" class="profile-pic">
         </div>
     </div>
@@ -269,4 +275,32 @@
                 <div class="row-left">Language skills</div>
                 <div class="row-right">
                     <span class="skills-text">English: native speaker</span>
-                    <span class="skills
+                    <span class="skills-text">Spanish: fluent</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-left">Computer skills</div>
+                <div class="row-right">
+                    <span class="skills-text">Working knowledge: MS Office</span>
+                    <span class="skills-text">Basic knowledge: Adobe Photoshop</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-left">Interests</div>
+                <div class="row-right">
+                    <span class="skills-text">Reading, Sports (Football) and Running), Travelling</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>London, 1st January 2023</p>
+        <div class="signature" contenteditable="false">
+            <img src="https://via.placeholder.com/150x60?text=Signature" alt="Signature">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
