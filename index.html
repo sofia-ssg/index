@@ -1,33 +1,272 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CV - Ion Popescu</title>
-  <style>
-    body {
-      font-family: Arial;
-      max-width: 800px;
-      margin: auto;
-      padding: 40px;
-      line-height: 1.6;
-    }
-    h1 {
-      color: #222;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Template</title>
+    <style>
+        /* General Reset & Typography */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 50px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+            margin-bottom: 30px;
+            color: #000;
+        }
+
+        /* Top Personal Info Section */
+        .personal-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .info-col {
+            flex: 0 0 35%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .info-col-img {
+            flex: 0 0 25%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        .info-item strong {
+            display: block;
+            margin-bottom: 3px;
+            font-size: 1rem;
+            color: #000;
+        }
+
+        .info-item span {
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        .profile-pic {
+            width: 140px;
+            height: auto;
+            object-fit: cover;
+            border: 1px solid #eee;
+        }
+
+        /* Sections (Career, Education, Skills) */
+        .section {
+            margin-bottom: 0;
+        }
+
+        .section-header {
+            background-color: #b3b3b3;
+            color: #222;
+            padding: 6px 12px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 25px;
+        }
+
+        .section-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Row Layout */
+        .row {
+            display: flex;
+            padding: 12px;
+        }
+
+        /* Alternating Background Colors */
+        .row:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .row:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        .row-left {
+            flex: 0 0 30%;
+            font-size: 0.95rem;
+            color: #333;
+            padding-right: 15px;
+            box-sizing: border-box;
+        }
+
+        .row-right {
+            flex: 0 0 70%;
+            font-size: 0.95rem;
+        }
+
+        .row-right strong {
+            display: block;
+            color: #000;
+            margin-bottom: 2px;
+        }
+
+        .row-right .subtitle {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .row-right ul {
+            margin: 0;
+            padding-left: 15px;
+            list-style-type: disc;
+            color: #444;
+        }
+
+        .row-right ul li {
+            margin-bottom: 2px;
+        }
+
+        /* Custom spacing for Skills section */
+        .skills-text {
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            padding: 12px;
+        }
+
+        .footer p {
+            margin: 0 0 10px 0;
+            font-size: 0.95rem;
+        }
+
+        .signature img {
+            height: 60px;
+            width: auto;
+        }
+    </style>
 </head>
 <body>
-  <h1>Ion Popescu</h1>
-  <p>Email: ion@email.com</p>
-  <p>Telefon: +373...</p>
 
-  <h2>Experiență</h2>
-  <p>Frontend Developer — Company X</p>
+<div class="container">
+    <h1>CV</h1>
 
-  <h2>Educație</h2>
-  <p>UTM — Informatică</p>
+    <div class="personal-info">
+        <div class="info-col">
+            <div class="info-item">
+                <strong>Name</strong>
+                <span>Firstname Lastname</span>
+            </div>
+            <div class="info-item">
+                <strong>Address</strong>
+                <span>1 Kennington Rd<br>London, SE11 6HR</span>
+            </div>
+            <div class="info-item">
+                <strong>Email</strong>
+                <span>firstname@lastname.co.uk</span>
+            </div>
+        </div>
 
-  <h2>Skills</h2>
-  <p>HTML, CSS, JavaScript, React</p>
-</body>
-</html>
+        <div class="info-col">
+            <div class="info-item">
+                <strong>Birthday</strong>
+                <span>5th January 1982 in London</span>
+            </div>
+            <div class="info-item">
+                <strong>Phone</strong>
+                <span>+44 20 1111 1111</span>
+            </div>
+        </div>
+
+        <div class="info-col-img">
+            <img src="https://via.placeholder.com/140x180?text=Profile+Photo" alt="Profile Photo" class="profile-pic">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">Career</div>
+        <div class="section-body">
+            <div class="row">
+                <div class="row-left">seit 11/2016</div>
+                <div class="row-right">
+                    <strong>Another Challenge Ltd.</strong>
+                    <span class="subtitle">Team assistant</span>
+                    <ul>
+                        <li>Overview of key responsibilities</li>
+                        <li>Skills, experience and achievements</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-left">05/2014 - 10/2016</div>
+                <div class="row-right">
+                    <strong>Second Step PLC</strong>
+                    <span class="subtitle">Personal assistant</span>
+                    <ul>
+                        <li>Overview of key responsibilities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-left">01/2012 - 02/2014</div>
+                <div class="row-right">
+                    <strong>First and One Ltd.</strong>
+                    <span class="subtitle">Intern in marketing</span>
+                    <ul>
+                        <li>Overview of key responsibilities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">Education</div>
+        <div class="section-body">
+            <div class="row">
+                <div class="row-left">10/2007 - 10/2011</div>
+                <div class="row-right">
+                    <strong>London School of Economics</strong>
+                    <span class="subtitle">BSc Management</span>
+                    <ul>
+                        <li>Emphasis in Marketing and Management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-left">09/2004 - 07/2007</div>
+                <div class="row-right">
+                    <strong>Example Company Limited</strong>
+                    <span class="subtitle">Apprenticeship as office clerk</span>
+                    <ul>
+                        <li>Scope of training, experience and achievements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-header">Skills and Interests</div>
+        <div class="section-body">
+            <div class="row">
+                <div class="row-left">Language skills</div>
+                <div class="row-right">
+                    <span class="skills-text">English: native speaker</span>
+                    <span class="skills
